@@ -1,1 +1,67 @@
+:root {
+    --background-color: #668ba4;
+    --main-accent-color: #97cba9;
+    --accent_color2: #dde0ab; 
+    --accent_color3: #feffdf;
+}
 
+body{
+    background: var(--background-color);
+}
+
+header {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	background-color: var(--main-accent-color);
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+form{
+    text-align: center;
+    padding: 5%;
+    margin: 0 auto; 
+    width: 50%;      
+    border-collapse: collapse; 
+}
+
+table{
+    margin: 0 auto; 
+    width: 50%;      
+    border-collapse: collapse; 
+}
+
+th, td{
+    padding: 4px; 
+    text-align: center; 
+    border: 1px solid black; 
+}
+
+.displaySection{
+    background-color: var(--accent_color3);
+    border:  1px solid black;
+    grid-column: 2;
+    grid-row: 2/4;
+}
+
+.header{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.inputSection{
+    background-color: var(--accent_color2);
+    border:  1px solid black;
+    grid-column: 1/2;
+    grid-row: 2/5
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
